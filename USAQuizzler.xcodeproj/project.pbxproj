@@ -11,6 +11,10 @@
 		DF3C24732B3A7250002117EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C24722B3A7250002117EE /* ContentView.swift */; };
 		DF3C24752B3A7251002117EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3C24742B3A7251002117EE /* Assets.xcassets */; };
 		DF3C24782B3A7251002117EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3C24772B3A7251002117EE /* Preview Assets.xcassets */; };
+		DF9A22612B647E9500F44C89 /* USAState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22602B647E9500F44C89 /* USAState.swift */; };
+		DF9A22632B64816F00F44C89 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22622B64816F00F44C89 /* UserView.swift */; };
+		DF9A22652B64864D00F44C89 /* CitizenshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22642B64864D00F44C89 /* CitizenshipView.swift */; };
+		DF9A22672B6486C500F44C89 /* NationalParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22662B6486C500F44C89 /* NationalParksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		DF3C24722B3A7250002117EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF3C24742B3A7251002117EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3C24772B3A7251002117EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF9A22602B647E9500F44C89 /* USAState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USAState.swift; sourceTree = "<group>"; };
+		DF9A22622B64816F00F44C89 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		DF9A22642B64864D00F44C89 /* CitizenshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenshipView.swift; sourceTree = "<group>"; };
+		DF9A22662B6486C500F44C89 /* NationalParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				DF3C24702B3A7250002117EE /* USAQuizzlerApp.swift */,
-				DF3C24722B3A7250002117EE /* ContentView.swift */,
+				DF9A22682B64874400F44C89 /* Views */,
+				DF9A22602B647E9500F44C89 /* USAState.swift */,
 				DF3C24742B3A7251002117EE /* Assets.xcassets */,
 				DF3C24762B3A7251002117EE /* Preview Content */,
 			);
@@ -67,6 +76,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DF9A22682B64874400F44C89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A22662B6486C500F44C89 /* NationalParksView.swift */,
+				DF9A22642B64864D00F44C89 /* CitizenshipView.swift */,
+				DF9A22622B64816F00F44C89 /* UserView.swift */,
+				DF3C24722B3A7250002117EE /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +97,7 @@
 				DF3C24692B3A7250002117EE /* Sources */,
 				DF3C246A2B3A7250002117EE /* Frameworks */,
 				DF3C246B2B3A7250002117EE /* Resources */,
+				DF9A225F2B647CFB00F44C89 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -132,13 +153,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DF9A225F2B647CFB00F44C89 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF3C24692B3A7250002117EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9A22612B647E9500F44C89 /* USAState.swift in Sources */,
 				DF3C24732B3A7250002117EE /* ContentView.swift in Sources */,
 				DF3C24712B3A7250002117EE /* USAQuizzlerApp.swift in Sources */,
+				DF9A22652B64864D00F44C89 /* CitizenshipView.swift in Sources */,
+				DF9A22632B64816F00F44C89 /* UserView.swift in Sources */,
+				DF9A22672B6486C500F44C89 /* NationalParksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +321,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"USAQuizzler/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73WC8F3KU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +351,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"USAQuizzler/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73WC8F3KU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

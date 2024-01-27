@@ -11,7 +11,24 @@ import SwiftUI
 struct USAQuizzlerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Flags", systemImage: "flag.fill")
+                    }
+                CitizenshipView()
+                    .tabItem {
+                        Label("Citizenship", systemImage: "hand.raised")
+                    }
+                NationalParksView()
+                    .tabItem {
+                        Label("Parks", systemImage: "tree.fill")
+                    }
+                UserView()
+                    .tabItem {
+                        Label("Account", systemImage: "person.fill")
+                    }
+            }
         }
     }
 }
