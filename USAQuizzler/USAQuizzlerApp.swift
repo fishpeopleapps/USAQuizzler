@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct USAQuizzlerApp: App {
+    @State private var gameBrain = GameBrain()
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -29,6 +30,7 @@ struct USAQuizzlerApp: App {
                         Label("Account", systemImage: "person.fill")
                     }
             }
+            .environment(gameBrain)
         }
     }
 }

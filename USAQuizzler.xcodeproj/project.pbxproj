@@ -15,6 +15,13 @@
 		DF9A22632B64816F00F44C89 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22622B64816F00F44C89 /* UserView.swift */; };
 		DF9A22652B64864D00F44C89 /* CitizenshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22642B64864D00F44C89 /* CitizenshipView.swift */; };
 		DF9A22672B6486C500F44C89 /* NationalParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A22662B6486C500F44C89 /* NationalParksView.swift */; };
+		DF9A226B2B648DE100F44C89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A226A2B648DE100F44C89 /* User.swift */; };
+		DFC887F52B66B769000C7F42 /* Extension-Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC887F42B66B769000C7F42 /* Extension-Color.swift */; };
+		DFC887F72B66BC2F000C7F42 /* Extension-RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC887F62B66BC2F000C7F42 /* Extension-RoundedCorner.swift */; };
+		DFC887FB2B66BC7C000C7F42 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC887FA2B66BC7C000C7F42 /* Flag.swift */; };
+		DFC887FD2B66BD49000C7F42 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC887FC2B66BD49000C7F42 /* GameBrain.swift */; };
+		DFC887FF2B6700A2000C7F42 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFC887FE2B6700A2000C7F42 /* Merriweather-Regular.ttf */; };
+		DFC888022B670147000C7F42 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFC888012B670147000C7F42 /* Merriweather-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,14 @@
 		DF9A22622B64816F00F44C89 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		DF9A22642B64864D00F44C89 /* CitizenshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenshipView.swift; sourceTree = "<group>"; };
 		DF9A22662B6486C500F44C89 /* NationalParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksView.swift; sourceTree = "<group>"; };
+		DF9A226A2B648DE100F44C89 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DFC887F42B66B769000C7F42 /* Extension-Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Color.swift"; sourceTree = "<group>"; };
+		DFC887F62B66BC2F000C7F42 /* Extension-RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-RoundedCorner.swift"; sourceTree = "<group>"; };
+		DFC887FA2B66BC7C000C7F42 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		DFC887FC2B66BD49000C7F42 /* GameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
+		DFC887FE2B6700A2000C7F42 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		DFC888002B6700BC000C7F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFC888012B670147000C7F42 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +74,15 @@
 		DF3C246F2B3A7250002117EE /* USAQuizzler */ = {
 			isa = PBXGroup;
 			children = (
+				DFC888002B6700BC000C7F42 /* Info.plist */,
 				DF3C24702B3A7250002117EE /* USAQuizzlerApp.swift */,
+				DFC887FC2B66BD49000C7F42 /* GameBrain.swift */,
+				DFC887FE2B6700A2000C7F42 /* Merriweather-Regular.ttf */,
+				DFC888012B670147000C7F42 /* Merriweather-Bold.ttf */,
+				DFC887F92B66BC50000C7F42 /* Components */,
+				DFC887F82B66BC41000C7F42 /* Extensions */,
 				DF9A22682B64874400F44C89 /* Views */,
-				DF9A22602B647E9500F44C89 /* USAState.swift */,
+				DF9A22692B648DC800F44C89 /* Data */,
 				DF3C24742B3A7251002117EE /* Assets.xcassets */,
 				DF3C24762B3A7251002117EE /* Preview Content */,
 			);
@@ -85,6 +106,32 @@
 				DF3C24722B3A7250002117EE /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DF9A22692B648DC800F44C89 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A22602B647E9500F44C89 /* USAState.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DFC887F82B66BC41000C7F42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFC887F42B66B769000C7F42 /* Extension-Color.swift */,
+				DFC887F62B66BC2F000C7F42 /* Extension-RoundedCorner.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFC887F92B66BC50000C7F42 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFC887FA2B66BC7C000C7F42 /* Flag.swift */,
+				DF9A226A2B648DE100F44C89 /* User.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3C24782B3A7251002117EE /* Preview Assets.xcassets in Resources */,
+				DFC887FF2B6700A2000C7F42 /* Merriweather-Regular.ttf in Resources */,
+				DFC888022B670147000C7F42 /* Merriweather-Bold.ttf in Resources */,
 				DF3C24752B3A7251002117EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,11 +230,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9A22612B647E9500F44C89 /* USAState.swift in Sources */,
+				DFC887F52B66B769000C7F42 /* Extension-Color.swift in Sources */,
 				DF3C24732B3A7250002117EE /* ContentView.swift in Sources */,
 				DF3C24712B3A7250002117EE /* USAQuizzlerApp.swift in Sources */,
 				DF9A22652B64864D00F44C89 /* CitizenshipView.swift in Sources */,
+				DFC887F72B66BC2F000C7F42 /* Extension-RoundedCorner.swift in Sources */,
 				DF9A22632B64816F00F44C89 /* UserView.swift in Sources */,
+				DFC887FB2B66BC7C000C7F42 /* Flag.swift in Sources */,
+				DFC887FD2B66BD49000C7F42 /* GameBrain.swift in Sources */,
 				DF9A22672B6486C500F44C89 /* NationalParksView.swift in Sources */,
+				DF9A226B2B648DE100F44C89 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +377,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = USAQuizzler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,6 +408,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = USAQuizzler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
